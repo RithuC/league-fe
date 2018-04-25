@@ -12,11 +12,11 @@ export default function UserListComponent(props) {
             {
               props.users.map(user => (
                   <li key={user.id}>
-                    <Link to={{pathname: "/albums", state: {userId: user.id} }}>
+                    <Link to={{pathname: "/albums", state: {userId: user.id}}}>
                       <RaisedButton fullWidth={true}
                           backgroundColor="#5ac1bb"
                           labelColor="#ffffff"
-                          labelStyle={{ fontSize: '15px', fontWeight: '1000'}}
+                          labelStyle={{fontSize: '15px', fontWeight: '1000'}}
                           label={user.name}
                           className="rbutton" />
                     </Link>

@@ -12,13 +12,13 @@ export default function AlbumListComponent(props) {
             {
               props.albums.map(album => (
                   <li key={album.id}>
-                    <Link to={{pathname: "/pictures", state: {albumId: album.id} }}>
+                    <Link to={{pathname: "/pictures", state: {albumId: album.id}}}>
                       <RaisedButton className="rbutton"
                       fullWidth={true}
                       label={album.title}
                       backgroundColor="#5ac1bb"
                       labelColor="#ffffff"
-                      labelStyle={{ fontSize: '15px', fontWeight: '1000'}}
+                      labelStyle={{fontSize: '15px', fontWeight: '1000'}}
                       />
                     </Link>
                   </li>
