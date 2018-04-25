@@ -10,7 +10,6 @@ export default class PictureListContainer extends React.Component {
   }
 
   componentDidMount() {
-    console.log("pictureList mount");
     this.getPictures();
   }
 

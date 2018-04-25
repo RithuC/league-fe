@@ -10,7 +10,6 @@ export default class UserListContainer extends React.Component {
   }
 
   componentDidMount() {
-    console.log("userlist mount");
     this.getUsers();
   }
 

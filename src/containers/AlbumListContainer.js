@@ -10,7 +10,6 @@ export default class AlbumListContainer extends React.Component {
   }
 
   componentDidMount() {
-    console.log("albumlist mount");
     this.getAlbums();
   }
 
@@ -25,7 +24,7 @@ export default class AlbumListContainer extends React.Component {
         });
       });
   }
-  
+
   render() {
     return (
       <div>
