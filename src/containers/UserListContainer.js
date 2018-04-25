@@ -1,5 +1,5 @@
 import React from 'react';
-import UserListView from '../views/UserListView.js';
+import UserListComponent from '../components/UserListComponent.js';
 
 export default class UserListContainer extends React.Component {
   constructor(props) {
@@ -28,7 +28,7 @@ export default class UserListContainer extends React.Component {
   render() {
     return (
       <div>
-        <UserListView users={this.state.users}/>
+        <UserListComponent users={this.state.users}/>
       </div>
     );
   }

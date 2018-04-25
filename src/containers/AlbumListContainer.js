@@ -1,5 +1,5 @@
 import React from 'react';
-import AlbumListView from '../views/AlbumListView.js';
+import AlbumListComponent from '../components/AlbumListComponent.js';
 
 export default class AlbumListContainer extends React.Component {
   constructor(props) {
@@ -28,7 +28,7 @@ export default class AlbumListContainer extends React.Component {
   render() {
     return (
       <div>
-        <AlbumListView albums={this.state.albums}/>
+        <AlbumListComponent albums={this.state.albums}/>
       </div>
     );
   }

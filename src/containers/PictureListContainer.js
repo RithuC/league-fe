@@ -1,5 +1,5 @@
 import React from 'react';
-import PictureListView from '../views/PictureListView.js';
+import PictureListComponent from '../components/PictureListComponent.js';
 
 export default class PictureListContainer extends React.Component {
   constructor(props) {
@@ -28,7 +28,7 @@ export default class PictureListContainer extends React.Component {
   render() {
     return (
       <div>
-        <PictureListView pictures={this.state.pictures}/>
+        <PictureListComponent pictures={this.state.pictures}/>
       </div>
     );
   }
