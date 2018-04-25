@@ -16,7 +16,7 @@ export default class PictureListContainer extends React.Component {
                   title={picture.title}
                   titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.4) 40%,rgba(0,0,0,0) 100%)"
                   >
-                  <img src={picture.url} />
+                  <img src={picture.url} alt={picture.url} />
                 </GridTile>
               ))
             }
