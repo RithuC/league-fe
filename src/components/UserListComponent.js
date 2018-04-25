@@ -10,15 +10,18 @@ export default function UserListComponent(props) {
           <h3> USERS </h3>
           <ul className="userList">
             {
-              props.users.map((user) => {
-                return (
+              props.users.map(user => (
                   <li key={user.id}>
                     <Link to={{pathname: "/albums", state: {userId: user.id} }}>
-                      <RaisedButton fullWidth={true} backgroundColor="#5ac1bb" labelColor="#ffffff" labelStyle={{ fontSize: '15px', fontWeight: '1000'}}/*"#ee8082"*/ label={user.name} className="rbutton" />
+                      <RaisedButton fullWidth={true}
+                          backgroundColor="#5ac1bb"
+                          labelColor="#ffffff"
+                          labelStyle={{ fontSize: '15px', fontWeight: '1000'}}
+                          label={user.name}
+                          className="rbutton" />
                     </Link>
                   </li>
-                );
-              })
+              ))
             }
             </ul>
         </div>

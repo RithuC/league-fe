@@ -19,10 +19,18 @@ class App extends React.Component {
       <Router>
         <div>
           <Switch>
-            <Route exact path='/' component={() => <Redirect to="/users" />}/>
-            <Route path='/users' render={() => <UserListContainer/>}/>
-            <Route path="/albums" render={(props) => <AlbumListContainer {...props}/>}/>
-            <Route path="/pictures" render={(props) => <PictureListContainer {...props}/>}/>
+            <Route exact path='/'
+              component={() => <Redirect to="/users" />}
+            />
+            <Route path='/users'
+              render={() => <UserListContainer/>}
+            />
+            <Route path="/albums"
+              render={(props) => <AlbumListContainer {...props}/>}
+            />
+            <Route path="/pictures"
+              render={(props) => <PictureListContainer {...props}/>}
+            />
           </Switch>
         </div>
       </Router>
